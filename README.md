@@ -1,2 +1,0 @@
-# eventdashboard
-Created with CodeSandbox
