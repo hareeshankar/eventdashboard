@@ -61,9 +61,9 @@ class App extends React.Component {
     this.eventscomp();
   }
   render() {
-    return <div>{this.eventscomp()}</div>;
+    return <div  className="App">{this.eventscomp()}</div>;
   }
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App className="App" />, rootElement);
+ReactDOM.render(<App />, rootElement);
