@@ -7,7 +7,9 @@ import DescriptionIcon from "@material-ui/icons/Description";
 import ButtonBar from "./ButtonBar";
 
 const styles = theme => ({
-  root: {},
+  root: {
+    marginBottom: theme.spacing.unit * 3
+  },
   paper: {
     marginleft: theme.spacing.unit * 30,
     padding: theme.spacing.unit * 3,
@@ -22,7 +24,8 @@ const styles = theme => ({
       width: "100%",
       marginTop: theme.spacing.unit * 2,
       marginBottom: theme.spacing.unit * 2,
-      marginLeft: 0
+      marginLeft: 0,
+      marginRight: 0
     }
   },
   eventName: {
@@ -77,7 +80,7 @@ class EventItem extends Component {
     const { classes } = this.props;
 
     return (
-      <div>
+      <div className={classes.root}>
         <Paper className={classes.paper}>
           <div className={classes.eboxrow}>
             <div className={classes.eventND}>

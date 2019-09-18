@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import EventItem from "./EventItem1.js";
+import Events from "./Events.js";
 
 import "./styles.css";
 
@@ -61,7 +62,7 @@ class App extends React.Component {
     this.eventscomp();
   }
   render() {
-    return <div  className="App">{this.eventscomp()}</div>;
+    return <div className="App">{this.eventscomp()}</div>;
   }
 }
 
